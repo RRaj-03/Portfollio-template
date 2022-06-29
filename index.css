@@ -456,6 +456,11 @@ input, textarea{
     .navbar{
         height: auto;
     }
+    .navbar>ul>li{
+        margin: 0;
+        text-align: center;
+        border-radius: 0;
+    }
     .IntroContainer{
         height: 100vh;
     }
