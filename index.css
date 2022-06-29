@@ -98,32 +98,7 @@ html, body {
     border-radius: 30px;   
     color: white;
 }
-/* .navbar>ul>li:active{
-    border-radius: 30px 30px 0 0;  
-}
-.navbar>ul>li:hover:before:active {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: -40px;
-    height: 30px;
-    width: 40px;
-    border-bottom-right-radius: 50%;
-     background: #000;
-    box-shadow: 15px 0px 0px 0px #e9d5ac;
-} 
-.navbar>ul>li:hover::after:active {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    right: -40px;
-    height: 30px;
-    width: 40px;
-    border-bottom-left-radius: 50%;
-    background: #000;
-    box-shadow: -15px 0px 0px 0px #e9d5ac;
-}
- */
+
 .navbar>ul>li>a{
     text-decoration: none;
     color: inherit;
@@ -174,6 +149,7 @@ html, body {
     text-align: center;
     padding-top: 1rem;
     font-size: 3rem;
+    font-weight: bold;
 }
 .headtext{
     text-align: center;
@@ -181,6 +157,7 @@ html, body {
 }
 .cardhead{
     font-size: 2.4rem;
+    font-weight: bold;
 }
 .text{
     padding: 0.2rem;
@@ -229,6 +206,14 @@ html, body {
     background-color: aqua;
     border-radius: 40px;
     border: #000000 solid 0.5rem;
+    transition: all 2s ease;
+}
+.card1>.text{
+    display: none;
+}
+.card1:hover>.text{
+    display: block;
+    
 }
 .card1>img{
     width: auto;
@@ -236,15 +221,7 @@ html, body {
     transition: all 1s;
     
 }
-.card1:hover>div{
-    visibility: hidden;
-    
-}
-.card1:hover>img{
-    position: absolute;
-    height: 90%;
-    transition: all 1s;
-}
+
 #card1{
     grid-column: 1/7;
 }
@@ -262,12 +239,7 @@ html, body {
     grid-column: 8/11;
 }
 
-#card5:hover>img{
-    position: absolute;
-    transform: translateY(1rem);
-    width: 100%;
-    height: auto;
-}
+
 #card6{
     grid-column: 1/8;
 }
@@ -314,7 +286,7 @@ input, textarea{
     text-align: center;
 }
 
-@media (min-width:450px) and (max-width:800px){
+@media (min-width:650px) and (max-width:800px){
     .introimg1 {
         display: block;
         align-self: center;
@@ -339,6 +311,11 @@ input, textarea{
     .navbar{
         height: auto;
     }
+    .navbar>ul>li{
+        margin: 0;
+        text-align: center;
+        border-radius: 0;
+    }
     .IntroContainer{
         height: 100vh;
     }
@@ -354,6 +331,42 @@ input, textarea{
 @media (min-width:450px) and (max-width:650px){
     .myskills{
         grid-template-rows: 25rem 25rem 22rem 24rem;
+    }
+    .navbar>ul{
+        display: block;
+    }
+    .navbar{
+        height: auto;
+    }
+    .navbar>ul>li{
+        margin: 0;
+        text-align: center;
+        border-radius: 0;
+    }
+    .IntroContainer{
+        height: 100vh;
+    }
+    .introimg1 {
+        display: block;
+        align-self: center;
+    justify-self: center;
+    width: 100%;
+    }
+    .introimg1>img{
+        width: 80%;
+    }
+    .introimg{
+        display: none;
+    }
+    .introimg>img{
+        padding: 0;
+    }
+    .introtext{
+        margin: 0;
+    }
+    .cardhead{
+        font-size: 1.6rem;
+        
     }
     #card1{
         grid-column: 1/11;
@@ -379,7 +392,9 @@ input, textarea{
         grid-column: 6/11;
         grid-row: 4;
     }
-    
+    .card{
+        width: 45%;
+    }
 
 }
 @media (max-width:450px){
@@ -416,6 +431,10 @@ input, textarea{
         align-self: center;
     justify-self: center;
     width: 100%;
+    }
+    .card1>img{
+        width: 95% !important;
+        height: auto;
     }
     
     .introimg{
@@ -455,6 +474,9 @@ input, textarea{
         display: block;
         margin: auto;
         width: 50%;
+    }
+    .heading{
+        font-size: 1.8rem;
     }
 
 }
