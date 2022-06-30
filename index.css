@@ -430,7 +430,6 @@ input, textarea{
         display: block;
         align-self: center;
     justify-self: center;
-    width: 100%;
     }
     .card1>img{
         width: 95% !important;
@@ -442,6 +441,7 @@ input, textarea{
     }
     .introtext{
         margin:1rem;
+        padding: 0;
     }
     .Intro{
         grid-template-columns: 100%;
@@ -478,7 +478,8 @@ input, textarea{
     .introimg1>img{
         display: block;
         margin: auto;
-        width: 50%;
+        height: 100%;
+        width: auto;
     }
     .heading{
         font-size: 1.4rem;
