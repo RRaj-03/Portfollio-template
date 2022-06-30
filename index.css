@@ -1,3 +1,4 @@
+/* global */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@ html, body {
     overflow: visible;
     scroll-behavior: smooth;
 }
+/* Intro page */
 .IntroContainer{
     width: 100%;
     height: 93.5vh;
@@ -77,6 +79,7 @@ html, body {
     padding: 1.5rem;
  
 }
+/* navbar */
 .navbar{
     height: 6.5vh;
     position: sticky;
@@ -123,6 +126,7 @@ html, body {
     height: 0.1rem;
     visibility: hidden;
 }
+/* project section */
 .myproject{
     display: flex;
     flex-wrap: wrap;
@@ -186,7 +190,7 @@ html, body {
     top: auto;
     font-size: 1.3rem;
 }
-
+/* skills section */
 .myskills{
     margin: 1rem 1rem;
     display: grid;
@@ -243,6 +247,7 @@ html, body {
 #card6{
     grid-column: 1/8;
 }
+/* form section */
 form{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -285,7 +290,7 @@ input, textarea{
     color: white;
     text-align: center;
 }
-
+/* media queries */
 @media (min-width:650px) and (max-width:800px){
     .introimg1 {
         display: block;
